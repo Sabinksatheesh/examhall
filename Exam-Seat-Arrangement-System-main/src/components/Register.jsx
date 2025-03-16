@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
-const MAIL_REGEX = /^[A-Za-z0-9]+@mgits\.ac\.in$/;
+const MAIL_REGEX = /^[A-Za-z0-9-]+@cet\.ac\.in$/;
 const REGISTER_URL = '/register';
 
 const Register = () => {
@@ -170,7 +170,7 @@ const Register = () => {
                             />
                             <p id="mailnote" className={mailFocus && mail && !validMail ? "text-xs rounded-lg bg-red-200 text-red-600 p-1 mt-[5px] " : "absolute left-[-9999px]"}>
                                 <FontAwesomeIcon icon={faInfoCircle} className="mr-1 text-red-600" />
-                                Use mgits mail id.(lowercase)
+                                Use cet mail id.(lowercase)
                             </p>
                         </div>
 

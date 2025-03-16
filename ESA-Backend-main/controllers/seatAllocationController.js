@@ -163,6 +163,7 @@ const sendExcels = async (req, res) => {
                 pass: process.env.APP_PASSWORD
             }
         });
+console.log(process.env.EMAIL,process.env.APP_PASSWORD);
 
         const attachments = files.map((file) => {
             const filePath = path.join(directoryPath, file);
